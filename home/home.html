@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="contaner">
-        <div style="background-image: url('../Images/photo-1613896527026-f195d5c818ed.avif');" >
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid" style="    width: 90%;">
+        <div style="background-image: url('../Images/photo-1613896527026-f195d5c818ed.avif');">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary "
+                style="  height: 100px; position: absolute;width: 100%; ">
+                <div class="container-fluid" style="    width: 100%;">
                     <a class="navbar-brand" href="#"><img class="logo"
                             src="../Images/school-logo-graduation-icon-education-college-school-logo-school-logo-graduation-icon-education-college-school-logo-white-137290284.jpg"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,7 +28,8 @@
                     <div class="collapse navbar-collapse " style="justify-content: end;" id="navbarNav">
                         <ul class="navbar-nav" style="width: 100%;  justify-content: center;">
                             <li class="nav-item">
-                                <a class="nav-link "style="color: green;font-weight: bold;" href="../home/home.html">Home</a>
+                                <a class="nav-link " style="color: green;font-weight: bold;"
+                                    href="../home/home.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../about us/aboutUs.html">About Us</a>
@@ -39,17 +43,75 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../contact us/contactUs.html">Contact Us</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="../rules and regulation/RulesAndRegulation.html">Rules & Regulation</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        <div class="image-block">
+            <div class="image">
+                <img style=" width:100% ; flex-wrap: wrap; " src="../Images/803.jpg">
+            </div>
+        </div>
     </div>
 
+    <div class="ImgRotate1">
+        <img class="ImgRotateImg2"  src="../Images/shape_16.svg">
+    </div >
+    <div class="My-Idea_Block">
+        <div class="My-Idea_Block-h1">
+            <h1>Our School have best teacher</h1>
+            <br>
+        </div>
+    </div>
+    <div class="ImgRotate">
+        <img class="ImgRotateImg1"  src="../Images/shape_16.svg">
+    </div >
+    <div style=" margin: 0px 0px 10% 10%; ">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="../Images/p1.jpg" alt="img" draggable="false"></div>
+                    <h2>Blanche Pearson</h2>
+                    <span>Math Teacher</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../Images/p2.jpeg" alt="img" draggable="false"></div>
+                    <h2>Joenas Brauers</h2>
+                    <span>English Teacher</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../Images/p3.jpg" alt="img" draggable="false"></div>
+                    <h2>Lariach French</h2>
+                    <span>Hindi Teacher</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../Images/p4.jpeg" alt="img" draggable="false"></div>
+                    <h2>James Khosravi</h2>
+                    <span>Punjabi Teacher</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../Images/p5.jpg" alt="img" draggable="false"></div>
+                    <h2>Kristina Zasiadko</h2>
+                    <span>Science Teacher</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../Images/p6.jpg" alt="img" draggable="false"></div>
+                    <h2>Donald Horton</h2>
+                    <span>Social Teacher</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="./home.js"></script>
 </body>
 
 </html>
