@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
+
 <body>
     <div class="contaner">
-        <div style="background-image: url('../Images/photo-1613896527026-f195d5c818ed.avif');" >
+        <div style="background-image: url('../Images/photo-1613896527026-f195d5c818ed.avif');">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid" style="    width: 100%;">
                     <a class="navbar-brand" href="#"><img class="logo"
@@ -33,13 +35,15 @@
                                 <a class="nav-link" href="../achievements/achievements.html">Achievements</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="color: green;font-weight: bold;" href="../gallery/gallery.html">Gallery</a>
+                                <a class="nav-link" style="color: green;font-weight: bold;"
+                                    href="../gallery/gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../contact us/contactUs.html">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../rules and regulation/RulesAndRegulation.html">Rules & Regulation</a>
+                                <a class="nav-link" href="../rules and regulation/RulesAndRegulation.html">Rules &
+                                    Regulation</a>
                             </li>
 
                         </ul>
@@ -48,6 +52,58 @@
             </nav>
         </div>
     </div>
+    <section class="sliderSection">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <div class="slide first">
+                    <img src="../Images/design-user-exp.jpg">
+                </div>
+                <div class="slide first">
+                    <img src="../Images/develop-custom-web-dev.jpg">
+                </div>
+                <div class="slide">
+                    <img src="../Images/develop-frontend.jpg">
+                </div>
+                <div class="slide ">
+                    <img src="../Images/development-header.jpg">
+                </div>
+                <div class="slide ">
+                    <img src="../Images/istockphoto-1409722748-612x612.jpg">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-bt1"></div>
+                    <div class="auto-bt2"></div>
+                    <div class="auto-bt3"></div>
+                    <div class="auto-bt4"></div>
+                    <div class="auto-bt5"></div>
+
+                </div>
+
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) { counter = 1; }
+
+        }, 5000); 
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
