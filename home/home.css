@@ -3,14 +3,17 @@
   margin: 0px;
   font-family: 'Montserrat', sans-serif;
 }
-
+p{
+  margin: 0;
+  padding: 0;
+}
 .logo {
   height: 100px;
   width: 100px;
 }
 
 .collapse ul li {
-  margin: 0 3%;
+  margin: 0 2%;
   font-size: 20px;
 }
 
@@ -18,6 +21,59 @@
   width: 100%;
   overflow: hidden;
 
+}
+
+.Upr_nav {
+  justify-content: space-around;
+  display: flex;
+  margin: 10px 0 10px 0;
+  align-items: center;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+}
+
+.Top-Banner {
+
+  justify-content: space-around;
+  display: flex;
+  height: 50px;
+  background-color: #1a9a00;
+  color: white;
+  align-items: end;
+}
+
+.navbar-btn {
+  position: relative;
+  width: 100%;
+  background-color: #1a9a00;
+}
+
+.collapse ul li a {
+  color: #ffffff;
+}
+
+.phone-section {
+  display: flex;
+  height: 69px;
+}
+
+.PhoneIcon {
+  margin: 15px;
+  color: #1f512b;
+  margin-top: 33px;
+}
+
+.Mail-section {
+  display: flex;
+  height: 69px;
+}
+
+.mailIcon {
+  margin: 15px;
+  color: #1f512b;
+  margin-top: 33px;
 }
 
 /* ------------------------------------Slider--------------------------- */
@@ -30,7 +86,7 @@
 }
 
 .slider {
-  width:100%;
+  width: 100%;
   height: 500px;
   overflow: hidden;
 }
@@ -51,8 +107,8 @@
 }
 
 .slide img {
-  width:100%;
-  object-fit: cover;  
+  width: 100%;
+  object-fit: cover;
   height: 500px;
 }
 
@@ -121,19 +177,23 @@
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 {
   background: #40D3DC;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+
+#radio2:checked~.navigation-auto .auto-btn2 {
   background: #40D3DC;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+
+#radio3:checked~.navigation-auto .auto-btn3 {
   background: #40D3DC;
 }
-#radio4:checked ~ .navigation-auto .auto-btn4 {
+
+#radio4:checked~.navigation-auto .auto-btn4 {
   background: #40D3DC;
 }
-#radio5:checked ~ .navigation-auto .auto-btn5 {
+
+#radio5:checked~.navigation-auto .auto-btn5 {
   background: #40D3DC;
 }
 
@@ -296,28 +356,30 @@
 
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: 500px;
   list-style: none;
   background: #fff;
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 50, 108, 0.701);
+  margin: 30px 20px;
 }
 
 .carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
+  /* background: #8B53FF;
+  height: 363px;
+  width: 412px;
+  border-radius: 50%; */
 }
 
 .card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 297px;
+  height: 381px;
+  border-radius: 15px;
   object-fit: cover;
-  border: 4px solid #fff;
+  border: 2px solid #fff;
 }
 
 .carousel .card h2 {
