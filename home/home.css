@@ -3,10 +3,12 @@
   margin: 0px;
   font-family: 'Montserrat', sans-serif;
 }
-p{
+
+p {
   margin: 0;
   padding: 0;
 }
+
 .logo {
   height: 100px;
   width: 100px;
@@ -106,6 +108,10 @@ p{
   transition: 2s;
 }
 
+.slide h1 h4 {
+  position: absolute;
+}
+
 .slide img {
   width: 100%;
   object-fit: cover;
@@ -137,7 +143,7 @@ p{
 }
 
 #radio2:checked~.first {
-  margin-left: -10%;
+  margin-left: -20%;
 }
 
 #radio3:checked~.first {
@@ -145,11 +151,11 @@ p{
 }
 
 #radio4:checked~.first {
-  margin-left: -30%;
+  margin-left: -40%;
 }
 
 #radio5:checked~.first {
-  margin-left: -40%;
+  margin-left: -60%;
 }
 
 
@@ -206,7 +212,64 @@ p{
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 15%;
+  margin: 80px;
+
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.sec-title {
+  position: relative;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.sec-title.text-center:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.sec-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100px;
+  background: #169200;
+}
+
+.Blocks_rectangle {
+  height: 80px;
+  width: 196px;
+  background-color: #1c950f;
+  z-index: 3;
+  border-radius: 50px;
+  box-shadow: 0px 0px 70px rgb(4, 108, 0);
+}
+
+.Blocks_circle {
+  height: 136px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 4;
+  background-color: #1c950f;
+  position: absolute;
+  margin: -56px 23px;
+  /* box-shadow: 0px 0px 15px rgba(0, 50, 108, 0.701); */
+}
+
+.Blocks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 
@@ -356,7 +419,7 @@ p{
 
 .carousel .card {
   scroll-snap-align: start;
-  height: 500px;
+  height: 469px;
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -520,6 +583,17 @@ p{
   margin-left: 100px;
 }
 
+.ContentInSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 500px;
+  color: white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.572);
+}
+
 @media screen and (max-width: 900px) {
   .bgBlack {
     height: 70dvh;
@@ -570,6 +644,11 @@ p{
   .InputBoxSection {
     margin: 50px;
 
+  }
+
+  .Blocks_rectangle {
+
+    margin-top: 90px;
   }
 
 }
@@ -654,4 +733,29 @@ p{
     font-size: 30px;
   }
 
+  .Mail-section {
+    display: none;
+  }
+
+  .phone-section {
+    display: none;
+  }
+
+  .Top-Banner {
+    display: none;
+  }
+
+  .Upr_nav {
+    margin-top: 20px;
+  }
+
+  .ContentInSlider {
+    padding: 25px;
+    height: 60%;
+  }
+
+  .Blocks_rectangle {
+
+    margin-top: 90px;
+  }
 }
