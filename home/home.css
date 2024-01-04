@@ -594,6 +594,61 @@ p {
   background-color: rgba(0, 0, 0, 0.572);
 }
 
+.Footer {
+  background-color: rgba(0, 0, 0, 0.509);
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  z-index: 15;
+
+}
+
+.Footer-Green_box {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  z-index: 1001;
+  margin-top: -105px;
+  background-color: #1a9a00;
+  height: 210px;
+  position: relative;
+  width: 1100px;
+  flex-wrap: wrap;
+
+}
+
+.Footer-Green_box p {
+  margin-bottom: 0;
+}
+
+.Footer-Box {
+  color: rgb(255, 255, 255);
+
+}
+
+.Footer-Icon {
+  display: flex;
+  justify-content: center;
+}
+
+.Footer-Box-Phone {
+  margin-top: -25px;
+}
+
+.Footer-detail {
+  margin-top: 30px;
+}
+.Footer-Last-Icon{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  z-index: 1001;
+  height: 210px;
+  position: relative;
+  flex-wrap: wrap;
+  bottom: -100px;
+  color: white;
+}
 @media screen and (max-width: 900px) {
   .bgBlack {
     height: 70dvh;
@@ -751,11 +806,22 @@ p {
 
   .ContentInSlider {
     padding: 25px;
-    height: 60%;
   }
 
   .Blocks_rectangle {
 
     margin-top: 90px;
+  }
+
+
+  .Footer-Green_box {
+    width: 350px;
+    height: 500px;
+  }
+
+  .Footer-Box {
+    width: 197px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
