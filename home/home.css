@@ -205,6 +205,29 @@ p {
 
 
 
+.big-circle1 {
+  flex-wrap: wrap;
+  position: absolute;
+  left: 30px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #0af329ab, #0af329ab);
+}
+
+.big-circle1:after {
+  content: "";
+  position: absolute;
+  flex-wrap: wrap;
+
+  width: 360px;
+  height: 360px;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+
 /* ----------------------------------------------------------------- */
 .My-Idea_Block {
   display: flex;
@@ -344,6 +367,69 @@ p {
 
 /* ----------------------------------------------------------------------- */
 
+.wrapperone {
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  height: 400px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapperone i.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
+  width: 36px;
+  background-color: #343f4f;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  z-index: 100;
+  cursor: pointer;
+}
+
+i.button:active {
+  transform: scale(0.94) translateY(-50%);
+}
+
+i#prev {
+  left: 25px;
+}
+
+i#next {
+  right: 25px;
+}
+
+.image-containerone {
+  height: 320px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-containerone .carouselone {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.carouselone img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
 
 /* ------------------------------------------------------------------------ */
 .wrapper {
@@ -430,12 +516,6 @@ p {
   margin: 30px 20px;
 }
 
-.carousel .card .img {
-  /* background: #8B53FF;
-  height: 363px;
-  width: 412px;
-  border-radius: 50%; */
-}
 
 .card .img img {
   width: 297px;
@@ -499,6 +579,15 @@ p {
   border: 1.5px solid #00BDE5;
 }
 
+.fancy-feature-thirtySeven {
+  z-index: 1001;
+  position: relative;
+  background-color: #ffffff;
+  width: 1200px;
+  margin-top: -1px;
+  padding: 50px 65px;
+  border-radius: 0% 0% 150px 150px;
+}
 
 /* ------------------------------------------------------------ */
 .user-data-section .input-group-meta {
@@ -506,11 +595,11 @@ p {
 }
 
 .user-data-section .form-wrapper {
-  background: #ced3f9;
-  width: 70dvh;
-  border-radius: 10px;
-  padding: 50px 70px 60px;
-  box-shadow: 0px 15px 30px rgba(0, 50, 108, 0.701);
+  background: #efefef;
+  width: 500px;
+  border-radius: 50px;
+  padding: 39px 40px 40px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.151);
 }
 
 .user-data-section .input-group-meta input {
@@ -551,15 +640,24 @@ p {
 }
 
 .Services-New-Block-Lower-block-one {
-  /* background: rgba(0, 209, 255, 0.2) */
-  width: 70dvh;
+  background: #1a9a00;
+  width: 455px;
   border-radius: 40px;
   transition: 0.5s;
   color: #000000;
   height: 490px;
-  margin: 250px 0 0 150px;
+  margin: 250px 40px 0 69px;
+  box-shadow: 0px 15px 30px rgba(82, 209, 96, 0.701);
+}
 
-  box-shadow: 0px 15px 30px rgba(0, 50, 108, 0.701);
+.Feedback-section {
+  z-index: 1000;
+  position: relative;
+  background-color: white;
+  display: flex;
+  padding-bottom: 50px;
+  border-radius: 0px 150px 0 0px;
+  margin-top: 90px;
 }
 
 .Services-New-Block-Lower-block-one:hover {
@@ -580,7 +678,6 @@ p {
 
 .InputBoxSection {
   margin: 50px;
-  margin-left: 100px;
 }
 
 .ContentInSlider {
@@ -638,7 +735,8 @@ p {
 .Footer-detail {
   margin-top: 30px;
 }
-.Footer-Last-Icon{
+
+.Footer-Last-Icon {
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -649,6 +747,7 @@ p {
   bottom: -100px;
   color: white;
 }
+
 @media screen and (max-width: 900px) {
   .bgBlack {
     height: 70dvh;
@@ -750,8 +849,7 @@ p {
     height: 50vh;
   } */
   .col-lg-6-RES {
-    height: 100vh;
-    margin-top: 70px;
+    height: 640px;
   }
 
   .main-title {
@@ -823,5 +921,20 @@ p {
     width: 197px;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  .fancy-feature-thirtySeven {
+
+    border-radius: 0% 0% 70px 70px;
+    padding-bottom: 50px;
+  }
+
+  .user-data-section .form-wrapper {
+
+    padding: 30px 25px 25px;
+  }
+
+  .Footer {
+    height: 84%;
   }
 }
