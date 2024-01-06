@@ -110,7 +110,7 @@ setInterval(function () {
     counter++;
     if (counter > 4) { counter = 1; }
 
-}, 5000); 
+}, 5000);
 
 // -----------------------------------------------------------
 
@@ -118,38 +118,38 @@ setInterval(function () {
 
 // Get the DOM elements for the image carousel
 const wrapperone = document.querySelector(".wrapperone"),
-carouselone = document.querySelector(".carouselone"),
-  images = document.querySelectorAll("img"),
-  buttons = document.querySelectorAll(".button");
+    carouselone = document.querySelector(".carouselone"),
+    images = document.querySelectorAll("img"),
+    buttons = document.querySelectorAll(".button");
 
 let imageIndex = 1,
-  intervalId;
+    intervalId;
 
 // Define function to start automatic image slider
 const autoSlide = () => {
-  // Start the slideshow by calling slideImage() every 2 seconds
-  intervalId = setInterval(() => slideImage(++imageIndex), 2000);
+    // Start the slideshow by calling slideImage() every 2 seconds
+    intervalId = setInterval(() => slideImage(++imageIndex), 2000);
 };
 // Call autoSlide function on page load
 autoSlide();
 
 // A function that updates the carousel display to show the specified image
 const slideImage = () => {
-  // Calculate the updated image index
-  imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
-  // Update the carousel display to show the specified image
-  carouselone.style.transform = `translate(-${imageIndex * 100}%)`;
+    // Calculate the updated image index
+    imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
+    // Update the carousel display to show the specified image
+    carouselone.style.transform = `translate(-${imageIndex * 100}%)`;
 };
 
 // A function that updates the carousel display to show the next or previous image
 const updateClick = (e) => {
-  // Stop the automatic slideshow
-  clearInterval(intervalId);
-  // Calculate the updated image index based on the button clicked
-  imageIndex += e.target.id === "next" ? 1 : -1;
-  slideImage(imageIndex);
-  // Restart the automatic slideshow
-  autoSlide();
+    // Stop the automatic slideshow
+    clearInterval(intervalId);
+    // Calculate the updated image index based on the button clicked
+    imageIndex += e.target.id === "next" ? 1 : -1;
+    slideImage(imageIndex);
+    // Restart the automatic slideshow
+    autoSlide();
 };
 
 // Add event listeners to the navigation buttons
@@ -159,3 +159,23 @@ buttons.forEach((button) => button.addEventListener("click", updateClick));
 wrapperone.addEventListener("mouseover", () => clearInterval(intervalId));
 // Add mouseleave event listener to wrapper element to start auto sliding again
 wrapperone.addEventListener("mouseleave", autoSlide);
+
+
+// -----------------------------------R-Form-----------------------------------------------------
+// const form = document.querySelector("form"),
+//     nextBtn = form.querySelector(".nextBtn"),
+//     backBtn = form.querySelector(".backBtn"),
+//     allInput = form.querySelectorAll(".first input");
+
+
+// nextBtn.addEventListener("click", () => {
+//     allInput.forEach(input => {
+//         if (input.value != "") {
+//             form.classList.add('secActive');
+//         } else {
+//             form.classList.remove('secActive');
+//         }
+//     })
+// })
+
+// backBtn.addEventListener("click", () => form.classList.remove('secActive'));
