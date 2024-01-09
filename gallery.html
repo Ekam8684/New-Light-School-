@@ -74,7 +74,8 @@
                                 <a class="nav-link" href="./contactUs.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="./RegistrationInstructions.html">Admissions</a>
+                                <a class="nav-link" target="_blank"
+                                    href="./RegistrationInstructions.html">Admissions</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./RulesAndRegulation.html">Rules &
@@ -98,6 +99,40 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- --------------------------------------------------------------------------------- -->
+
+    <div class="Gallery-Section">
+
+        <div class="images-section">
+
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023(About US).jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/IMG1.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/IMG2.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/IMG3.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/IMG4.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/IMG5.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/IMG6.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.33.17 PM.jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.32.48 PM (8).jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.32.48 PM (7).jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.32.48 PM (6).jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.32.48 PM (5).jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.32.48 PM (4).jpeg"></div>
+            <div class="Gallery-img"><img src="./Images/NLSImg/WhatsApp Image 2023-12-19 at 9.32.48 PM (3).jpeg"></div>
+        </div>
+        <div class="pop-image">
+            <span>&times;</span>
+            <img src="./Images/NLSImg/IMG1.jpeg" alt="">
+        </div>
+    </div>
+
+
+
+
+
     <!-- -------------------------------------------footer------------------------------------------------------ -->
     <div style="background-color: rgb(255, 255, 255);    height: 200px;z-index: 1000;position: relative;"> </div>
     <div>
@@ -166,6 +201,18 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20ec5642e7.js" crossorigin="anonymous"></script>
     <script src="./JavaScript.js"></script>
+    <script>
+        document.querySelectorAll('.images-section img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.pop-image').style.display = 'block';
+                document.querySelector('.pop-image img').src = image.getAttribute('src')
+
+            }
+        });
+        document.querySelector('.pop-image span').onclick = () => {
+            document.querySelector('.pop-image').style.display = 'none';
+        };
+    </script>
 </body>
 
 </html>

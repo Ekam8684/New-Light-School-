@@ -1111,22 +1111,96 @@ form .buttons button,
 
 
 
+/* ----------------------------------------------------------------------------- */
 
 
+.Gallery-Section {
+  position: relative;
+  z-index: 1500;
+  background-color: white;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.Gallery-Section .images-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 15px;
+  justify-content: center;
+}
+
+.Gallery-Section .images-section .Gallery-img {
+  height: 300px;
+  width: 370px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Gallery-Section .images-section .Gallery-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.Gallery-Section .images-section .Gallery-img:hover img {
+  transform: scale(1.1);
+}
+
+.Gallery-Section .pop-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000b7;
+  height: 100%;
+  width: 100%;
+  z-index: 1500;
+  display: none;
+}
+
+.Gallery-Section .pop-image span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 1500;
+  margin: 10px;
+}
+
+.Gallery-Section .pop-image img {
+  height: 500px;
+  width: 750px;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgb(255, 255, 255);
+
+}
 
 
+.Blocks_rectangle-contact {
+  height: 152px;
+  width: 215px;
+}
 
 
-
-
-
-
-
-
+/* ----------------------------------------------------------------------------- */
 
 
 
 @media screen and (max-width: 900px) {
+
+  .Gallery-Section .pop-image img {
+    width: 95%;
+  }
+
   .bgBlack {
     height: 70dvh;
   }
@@ -1332,5 +1406,15 @@ form .buttons button,
     width: 800px;
     margin-top: 228px;
     margin-left: 0px;
+  }
+
+  .Gallery-Section .pop-image span {
+    left: 0;
+  }
+
+  .Gallery-Section .pop-image img {
+    width: 48%;
+    margin-top: 100px;
+    left: 0;
   }
 }
