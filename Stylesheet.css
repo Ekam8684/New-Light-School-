@@ -597,10 +597,10 @@ i#next {
 
 .user-data-section .form-wrapper {
   background: #efefef1a;
-    width: 500px;
-    border-radius: 50px;
-    padding: 39px 40px 40px;
-    box-shadow: 0px 0px 30px rgb(0 0 0 / 7%);
+  width: 500px;
+  border-radius: 50px;
+  padding: 39px 40px 40px;
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 7%);
 }
 
 .user-data-section .input-group-meta input {
@@ -1265,9 +1265,92 @@ form .buttons button,
   width: 600px;
 }
 
-.aff-miss-aim-p p{
+.aff-miss-aim-p p {
   width: 540px;
 }
+
+/* ---------------------------------------------- */
+
+.RandR-section-box {
+  z-index: 1000;
+  position: relative;
+  background-color: #00000080;
+  padding-top: 1px;
+  padding-bottom: 5%;
+}
+
+.RandR-section-box-one {
+  margin-top: 5%;
+  border-radius: 0 130px 130px 0;
+  width: 80%;
+  padding: 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.RandR-section-box-two-out {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin: 5% 0;
+}
+
+.RandR-section-box-two {
+  border-radius: 130px 0 0 130px;
+  width: 80%;
+  padding: 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.RandR-section-box-two-in {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.RandR-section-box-Three {
+  border-radius: 0 130px 130px 0;
+  width: 80%;
+  padding: 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.RandR-section-box-one-three {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.RandR-section-box h1,
+p,
+h2,
+h3 {
+
+  font-weight: 600;
+}
+
+.RandR-section-box-two-time {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* ----------------------------------------------------------------------------- */
 
 
@@ -1276,19 +1359,25 @@ form .buttons button,
   .About-Section-circle p {
     width: 365px;
   }
-  
-.aff-miss-aim-p p{
-  width: 365px;
-}
+
+  .RandR-section-box-two-time {
+    display: grid;
+  }
+
+  .aff-miss-aim-p p {
+    width: 365px;
+  }
+
   .Feedback-section {
     display: none;
   }
+
   .About-Section-circle-img img {
     position: relative;
     width: 370px;
     overflow: hidden;
     border-radius: 42px;
-    margin: 0px 0px 50px 0px ;
+    margin: 0px 0px 50px 0px;
     height: 310px;
   }
 
@@ -1394,7 +1483,8 @@ form .buttons button,
   .big-circle1 {
     display: none;
   }
-  .Aim-section{
+
+  .Aim-section {
     display: none;
   }
 }
@@ -1406,7 +1496,7 @@ form .buttons button,
     margin-top: 50px;
 
   }
-  
+
   .Contact-Section {
     width: 390px;
     padding-bottom: 18px;
