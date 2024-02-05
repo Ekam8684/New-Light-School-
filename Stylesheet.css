@@ -444,7 +444,7 @@ i#next {
 
 /* ------------------------------------------------------------------------ */
 .wrapper {
-  
+
   width: 100%;
   position: relative;
 }
@@ -672,9 +672,11 @@ i#next {
   width: 90%;
   justify-content: center;
 }
-.margin-LR{
+
+.margin-LR {
   padding: 0 50px;
 }
+
 .Services-New-Block-Lower-block-one:hover {
   background-color: rgb(255, 255, 255);
   color: black;
@@ -1516,9 +1518,25 @@ h3 {
     margin-top: 50px;
 
   }
-  .margin-LR{
+
+  .card .img img {
+    width: 220px;
+  }
+
+  .carousel .card {
+    width: 230px;
+
+  }
+
+  .RandR-section-box-Three {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .margin-LR {
     padding: 0px;
   }
+
   .Contact-Section {
     width: 390px;
     padding-bottom: 18px;
@@ -1637,10 +1655,20 @@ h3 {
   }
 
   .fancy-feature-thirtySeven {
-
-    border-radius: 0% 0% 70px 70px;
-    padding: 10px 10px 50px 10px;
+    border-radius: 0%;
+    padding: 10px 10px 0px 10px;
   }
+
+  .RandR-section-box-one {
+    width: 90%;
+    padding: 35px
+  }
+
+  .RandR-section-box-two {
+    width: 85%;
+    padding: 40px;
+  }
+
 
   .user-data-section .form-wrapper {
 
@@ -1655,7 +1683,8 @@ h3 {
     width: 800px;
     margin-left: 0px;
   }
-  .margin-trl{
+
+  .margin-trl {
     margin: 60px 25px 0;
   }
 
